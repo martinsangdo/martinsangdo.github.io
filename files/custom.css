@@ -1,0 +1,8 @@
+@charset "UTF-8";
+/* author: Martin Sang Do */
+.my_cert_img {max-width:162px;height:125px;}
+
+.enlarge_cert_container {display:none;position:absolute;z-index:9999;}
+
+.profile-sec p {font-size:14px;}
+.mdl-card__actions.f_black {color:black;padding:10px;}
