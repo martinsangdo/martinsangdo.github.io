@@ -28,11 +28,25 @@ function toggle_en(btn){
         $('.en_text', $parent_td).hide();
     }
 }
-
+//show EN
 function toggle_all(){
     if ($($('.en_text', $('#tbl_parse'))[1]).is(':hidden')){
         $('.en_text', $('#tbl_parse')).show();
     } else {
         $('.en_text', $('#tbl_parse')).hide();
+    }
+}
+//copy typing texts
+function copy_all(){
+    $('#div_copied').hide();
+    var all = $('.txt_typing');
+    var len = all.length;
+    if (len > 1){
+        var copied_text = [];
+        for (var i=1; i<len; i++){
+            copied_text.push($(all[i]).val());
+        }
+        navigator.clipboard.writeText(copied_text.join('.'));
+        $('#div_copied').show();
     }
 }
