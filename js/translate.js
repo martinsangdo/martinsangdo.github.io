@@ -44,7 +44,7 @@ function copy_all(){
     if (len > 1){
         var copied_text = [];
         for (var i=1; i<len; i++){
-            copied_text.push($(all[i]).val());
+            copied_text.push($.trim($(all[i]).val()));
         }
         navigator.clipboard.writeText(copied_text.join('. '));
         $('#div_copied').show();
