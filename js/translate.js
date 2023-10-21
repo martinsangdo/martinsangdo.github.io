@@ -46,7 +46,7 @@ function copy_all(){
         for (var i=1; i<len; i++){
             copied_text.push($(all[i]).val());
         }
-        navigator.clipboard.writeText(copied_text.join('.'));
+        navigator.clipboard.writeText(copied_text.join('. '));
         $('#div_copied').show();
     }
 }
