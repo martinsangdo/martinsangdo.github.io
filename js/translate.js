@@ -1,3 +1,4 @@
+//split essay into isolated lines
 function parse_content(){
     $('.line', $('#tbl_parse')).remove();   //clear existing data
     var content_vi = $('#txt_content_vi').val();
@@ -18,6 +19,7 @@ function parse_content(){
         }
         $('#tbl_parse').append($tr);
     }
+    $('#div_copied').hide();
 }
 
 function toggle_en(btn){
