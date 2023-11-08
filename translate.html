@@ -49,13 +49,12 @@
     <table id="tbl_parse" width="100%" border="1">
         <thead>
             <td width="45%">Vietnamese</td>
-            <td><input type="button" onclick="toggle_all();" value="Toggle All"/></td>
+            <td><input type="button" onclick="toggle_all();" value="Toggle English"/></td>
             <td width="45%">Practice</td>
         </thead>
         <tr class="hidden" id="tr_template" data-en="">
             <td><textarea class="text_vi" rows="4" cols="72" disabled></textarea></td>
             <td>
-                <input type="button" onclick="toggle_en(this);" value="Toggle EN"/>
                 <div class="en_text"></div>
             </td>
             <td><textarea class="txt_typing" rows="4" cols="72"></textarea></td>
@@ -65,6 +64,7 @@
             <td><div id="div_copied" class="hidden font-blue">Text copied</div></td>
             <td><input class="bg-blue" type="button" onclick="copy_all();" value="Copy All"/></td>
         </tr>
-    </table>
+    </table><br/><br/>
+    <input class="bg-blue" type="button" onclick="restore_local();" value="Restore from Local Storage"/>
 </body>
 </html>
