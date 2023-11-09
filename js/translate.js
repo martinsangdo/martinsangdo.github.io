@@ -1,17 +1,23 @@
 //constants
-const LOCAL_KEY = 'writing_key';
+const LOCAL_KEY = 'translating_key';    //translating texts
+const LOCAL_KEY_VI = 'writing_key_vi';  //original VI texts
+const LOCAL_KEY_EN = 'writing_key_en';  //original EN texts
+
 
 //split essay into isolated lines
 function parse_content(){
-    clearStorage();
     $('.line', $('#tbl_parse')).remove();   //clear existing data
     var content_vi = $('#txt_content_vi').val();
     content_vi = $.trim(content_vi);
     if (content_vi == ''){
         return;
     }
+    var content_en = $.trim($('#txt_content_en').val());
+    //save into local storage
+    localStorage.setItem(LOCAL_KEY_VI, content_vi);
+    localStorage.setItem(LOCAL_KEY_EN, content_en);
+    //
     var splits_vi = content_vi.split('.');
-    var content_en = $('#txt_content_en').val();
     var splits_en = content_en.split('.');
     // console.log(splits_vi);
     var len = splits_vi.length;
@@ -70,7 +76,7 @@ function clearStorage(){
     localStorage.setItem(LOCAL_KEY, '');
 }
 //
-function saveEditingContent2LocalStore(content){
+function saveEditingContent2LocalStore(){
     var content = copy_all(true);
     content = $.trim(content);
     if (content != ''){
@@ -79,9 +85,25 @@ function saveEditingContent2LocalStore(content){
 }
 //
 function restore_local(){
-    var content = localStorage.getItem(LOCAL_KEY, '');
-    if (content == ''){
+    var content_vi = localStorage.getItem(LOCAL_KEY_VI, '');
+    var content_en = localStorage.getItem(LOCAL_KEY_EN, '');
+    if (content_vi != ''){
+        $('#txt_content_vi').val(content_vi);
+        $('#txt_content_en').val(content_en);
+    }
+    parse_content();
+    //parse the translating text & paste it again
+    var translating_content = localStorage.getItem(LOCAL_KEY, '');
+    if (translating_content == ''){
         return;
+    }
+    var texts = translating_content.split('.');
+    var all = $('.txt_typing');
+    var len = all.length;
+    if (len > 1){
+        for (var i=1; i<len; i++){
+            $(all[i]).val(texts[i-1]);
+        }
     }
 }
 //
