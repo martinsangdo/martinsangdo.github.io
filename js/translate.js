@@ -102,7 +102,7 @@ function restore_local(){
     var len = all.length;
     if (len > 1){
         for (var i=1; i<len; i++){
-            $(all[i]).val($trim(texts[i-1]));
+            $(all[i]).val($.trim(texts[i-1]));
         }
     }
 }
