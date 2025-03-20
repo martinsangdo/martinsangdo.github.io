@@ -1,25 +1,33 @@
 # Javascript
+Category | Description | Screenshot | Link
+| - | - | - | - |
+Slider | Mobile UI | ... | https://codepen.io/wikyware-net/pen/MWpoaRE
+Slider | ... | ... | https://www.queness.com/resources/html/newsslider/index.html
+Slider | ... | ... | https://www.sitepoint.com/100-jquery-sliders-part2/
 
-Index | Category | Description | Screenshot | Link
-| - | - | - | - | - |
-1 | ... | ... | ... | ...
 
 # Flutter
-Index | Category | Description | Screenshot | Link
-| - | - | - | - | - |
-1 | UI | Chat screen | ... | ...
+Category | Description | Screenshot | Link
+| - | - | - | - |
+UI | Chat screen | ... | ...
 
 # Python
-Index | Category | Description | Screenshot | Link
-| - | - | - | - | - |
-1 | ... | ... | ... | ...
+Category | Description | Screenshot | Link
+| - | - | - | - |
+... | ... | ... | ...
 
 # Node.js
-Index | Category | Description | Screenshot | Link
-| - | - | - | - | - |
-1 | ... | ... | ... | ...
+Category | Description | Screenshot | Link
+| - | - | - | - |
+... | ... | ... | ...
 
 # Java
-Index | Category | Description | Screenshot | Link
-| - | - | - | - | - |
-1 | ... | ... | ... | ...
+Category | Description | Screenshot | Link
+| - | - | - | - |
+... | ... | ... | ...
+
+# AI
+Category | Description | Screenshot | Link
+| - | - | - | - |
+... | ... | ... | ...
+
