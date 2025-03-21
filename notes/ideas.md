@@ -9,6 +9,7 @@ Slider | ... | ... | https://www.sitepoint.com/100-jquery-sliders-part2/ |
 # Flutter
 Category | Description | Screenshot | Link | Status
 | - | - | - | - | - |
+Complete app | All IT jobs over the world. Scape from many sources | ... | ... | ...
 UI | Chat screen | ... | ... | ...
 
 # Python
@@ -25,6 +26,14 @@ Category | Description | Screenshot | Link | Status
 Category | Description | Screenshot | Link | Status
 | - | - | - | - | - |
 ... | ... | ... | ... | ...
+
+# Database
+Category | Description | Screenshot | Link | Status
+| - | - | - | - | - |
+Complete | Database design inline with UI & export | https://dbdiagram.io/home | ... | ...
+... | ... | ... | ... | ...
+
+
 
 # AI
 Category | Description | Screenshot | Link | Status
